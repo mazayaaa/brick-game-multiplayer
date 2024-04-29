@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Workbench:wght@400;500&display=swap');
+
+body{
+    background: url('/assets/background.jpeg');
+}
+#game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#myCanvas {
+    margin-top: 50px;
+}
+
+#scoreboard {
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+    margin-right: 200px;
+}
+
+.scorePlayer {
+    padding: 1em;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+#score1 {
+    color: red;
+}
+
+#score2 {
+    color: blue;
+}
+
+#level {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    /* background-color: rgb(177, 175, 175); */
+    padding: 30px;
+    width: 300px;
+    margin: 200px auto;
+    border-radius: 10px;
+    display: none;
+}
+
+#level button {
+    /* padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    background-color: aqua;
+    cursor: pointer; */
+    padding: 20px;
+    width: 10em;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+#level button:hover {
+    background-color: white;
+    color: black;
+}
+
+#start-game{
+    height: 100vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Bungee Spice', cursive;
+}
+
+#start-game h1{
+    font-size: 5rem;
+    color: white;
+    background-color: black;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 6px 11px 10px 4px rgba(0, 0, 0, 0.5);
+}
+
+#start-game button{
+    padding: 20px;
+    width: 10em;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+#start-game button:hover{
+    background-color: white;
+    color: black;
+}

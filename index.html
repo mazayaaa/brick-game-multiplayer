@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brick Game Multiplayer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+  </head>
+  <body>
+    <!-- Start game -->
+    <div id="start-game">
+      <h1>Brick Game</h1>
+      <h1>Multiplayer</h1>
+      <button id="btn-start">Mulai Game</button>
+    </div>
+    <!-- Select Level -->
+    <div id="level">
+      <h1>Pilih Level :</h1>
+      <button id="btn-easy">Easy</button>
+      <button id="btn-medium">Medium</button>
+      <button id="btn-hard">Hard</button>
+      <button id="btn-expert">Expert</button>
+    </div>
+    <!-- Game Container -->
+    <div id="game-container">
+      <div id="scoreboard">
+        <p class="scorePlayer">Score Player 2 : <span id="score2">0</span></p>
+        <p class="scorePlayer">Score Player 1 : <span id="score1">0</span></p>
+      </div>
+      <!-- Canvas Game -->
+      <canvas
+        id="myCanvas"
+        width="500"
+        height="600"
+        style="border: 3px solid black"
+      ></canvas>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
